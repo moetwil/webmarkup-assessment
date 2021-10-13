@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+article {
+    display: inline;
+}
+
+
+/*Index*/
+.articleImage {
+    width: 200px;
+    float: right;
+    /* clear: both; */
+}
+
+.articleParagraph {
+    width: 50%;
+}
