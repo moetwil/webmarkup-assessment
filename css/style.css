@@ -78,14 +78,7 @@
         width: 50%;
     }
 
-    aside {
-        background-color: #ffff66;
-        /* width: 25em; */
-        /* padding: 50px; */
-        /* float: left; */
 
-        grid-area: asideTag;
-    }
 
 
 
@@ -131,6 +124,14 @@
 }
 
 
+aside {
+    background-color: #ffff66;
+    /* width: 25em; */
+    /* padding: 50px; */
+    /* float: left; */
+
+    grid-area: asideTag;
+}
 
 
 
