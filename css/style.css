@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -32,6 +34,7 @@
 
     .articleParagraph {
         width: 50%;
+        word-spacing: .2rem;
     }
 
     aside {
@@ -218,6 +221,7 @@ footer {
     color: #FFF;
     background-color: #FA0;
     opacity: 50%;
+    z-index: 9999;
 
 
     grid-area: cookieTag;
@@ -273,6 +277,11 @@ article {
     color: white;
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1em;
+    text-indent: 5px;
+    font-family: 'Notable', sans-serif;
 }
 
 #hamitems a:hover {
