@@ -20,6 +20,25 @@
         'footerTag  footerTag   cookieTag';
 }
 
+/*DESKTOP CSS*/
+@media (min-width: 1180px) {
+    .articleImage {
+        width: 200px;
+        float: right;
+        clear: both;
+        position: relative;
+        top: -120px;
+    }
+
+    .articleParagraph {
+        width: 50%;
+    }
+
+}
+
+
+
+
 /*tablet*/
 @media (min-width: 481px) and (max-width: 1179px) {
 
@@ -35,13 +54,26 @@
             'footerTag  footerTag   cookieTag';
     }
 
+    .articleImage {
+        width: 200px;
+        float: left;
+        clear: both;
+        position: relative;
+        top: -120px;
+    }
+
+    .articleParagraph {
+        width: 50%;
+        float: right;
+    }
+
 }
 
 /*mobile*/
 @media (max-width: 480px) {
-    /* body {
-        max-width: 1vw;
-    } */
+    #logo {
+        display: none;
+    }
 
 
 
@@ -130,27 +162,11 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* .article-container {
-    display: flex;
-    justify-content: space-between;
-} */
-
 article {
     padding: 50px;
 }
 
+/* 
 .articleImage {
     width: 200px;
     float: right;
@@ -161,7 +177,7 @@ article {
 
 .articleParagraph {
     width: 50%;
-}
+} */
 
 
 
