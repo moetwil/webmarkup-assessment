@@ -4,30 +4,68 @@
     border: 0;
 }
 
-/*grid*/
+/*DESKTOP CSS*/
 
-#grid-container {
-    width: 100%;
-    display: grid;
+@media screen and (min-width: 1180px) {
+    #grid-container {
+        /* width: 100%; */
+        display: grid;
 
-    grid-template-areas:
-        'headerTag  headerTag   headerTag'
-        'navTag navTag  navTag'
-        'videoTag   videoTag    videoTag'
-        'newyorkTag newyorkTag  asideTag'
-        'losangelesTag losangelesTag  asideTag'
-        'sanfranciscoTag sanfranciscoTag  asideTag'
-        'footerTag  footerTag   cookieTag';
+        grid-template-areas:
+            'headerTag  headerTag   headerTag'
+            'navTag navTag  navTag'
+            'videoTag   videoTag    videoTag'
+            'newyorkTag newyorkTag  asideTag'
+            'losangelesTag losangelesTag  asideTag'
+            'sanfranciscoTag sanfranciscoTag  asideTag'
+            'footerTag  footerTag   cookieTag';
+    }
+
+    aside {
+        background-color: #ffff66;
+        width: 25em;
+        padding: 50px;
+        float: left;
+
+        grid-area: asideTag;
+    }
+
+    .articleImage {
+        width: 200px;
+        float: right;
+        clear: both;
+        position: relative;
+        top: -120px;
+    }
+
+    .articleParagraph {
+        width: 50%;
+    }
+
+    article {
+        padding: 25px;
+    }
+
+    figure>figcaption {
+        float: right;
+        clear: both;
+    }
 }
 
-/*tablet*/
+
+
+/*TABLET CSS*/
 @media (min-width: 481px) and (max-width: 1179px) {
+
+    #five-reasons {
+        grid-area: fiveReasonsTag;
+    }
 
     #grid-container {
         grid-template-areas:
             'headerTag  headerTag   headerTag'
             'navTag navTag  navTag'
-            'asidetag   asideTag    asideTag'
+            'fiveReasonsTag   fiveReasonsTag    fiveReasonsTag'
             'videoTag   videoTag    videoTag'
             'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
             'losangelesTag losangelesTag  losangelesTag'
@@ -35,17 +73,30 @@
             'footerTag  footerTag   cookieTag';
     }
 
+
+    .articleImage {
+        width: 50%;
+    }
+
+    aside {
+        background-color: #ffff66;
+        /* width: 25em; */
+        /* padding: 50px; */
+        /* float: left; */
+
+        grid-area: asideTag;
+    }
+
+
+
 }
 
-/*mobile*/
+/*MOBILE CSS*/
 @media (max-width: 480px) {
-    /* body {
-        max-width: 1vw;
-    } */
-
-
 
     #grid-container {
+        /* width: 100px; */
+
         grid-template-areas:
             'headerTag  headerTag   navTag'
             'asidetag   asideTag    asideTag'
@@ -56,6 +107,27 @@
             'footerTag  footerTag   cookieTag';
     }
 
+    .articleImage {
+        width: 200px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    aside {
+        background-color: #ffff66;
+        /* width: 25em; */
+        /* padding: 50px; */
+        float: left;
+
+        grid-area: asideTag;
+    }
+
+    #logo {
+        display: none;
+    }
+
 }
 
 
@@ -64,59 +136,41 @@
 
 header {
     background-color: #808080;
-
     grid-area: headerTag;
 }
 
-nav {
+#hamnav {
     background-color: #0066cc;
-
     grid-area: navTag;
 }
 
 #videoSection {
     background-color: #ff9966;
-
     grid-area: videoTag;
 }
 
 #articleNewYork {
     background-color: #99ffcc;
-
     grid-area: newyorkTag;
 }
 
 #articleLosAngeles {
     background-color: #99ff99;
-
     grid-area: losangelesTag;
 }
 
 #articleSanFrancisco {
     background-color: #99ff66;
-
     grid-area: sanfranciscoTag;
-}
-
-aside {
-    background-color: #ffff66;
-    width: 25em;
-    padding: 50px;
-    float: left;
-
-    grid-area: asideTag;
 }
 
 footer {
     background-color: #6699ff;
-
     grid-area: footerTag;
 }
 
 #cookieStatement {
     background-color: #ff6600;
-
-
     grid-area: cookieTag;
 }
 
@@ -128,53 +182,30 @@ footer {
     grid-area: mobileNavTag;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .article-container {
-    display: flex;
-    justify-content: space-between;
-} */
-
-article {
-    padding: 50px;
-}
-
-.articleImage {
-    width: 200px;
-    float: right;
-    clear: both;
-    position: relative;
-    top: -120px;
-}
-
-.articleParagraph {
-    width: 50%;
+aside {
+    background-color: #ffff66;
+    grid-area: asideTag;
 }
 
 
 
 
 
-/* [ON BIG SCREEN] */
-/* (A) WRAPPER */
+
+
+
+
+
+
+
+
+/*HAMBURGER MENU*/
+/* DESKTOP */
 #hamnav {
     width: 100%;
     background: #000;
 }
 
-/* (B) HORIZONTAL MENU ITEMS */
 #hamitems {
     display: flex;
 }
@@ -192,18 +223,14 @@ article {
     background: #401408;
 }
 
-/* (C) HIDE HAMBURGER */
 #hamnav label,
 #hamburger {
     display: none;
 }
 
-
-
-/* [ON SMALL SCREENS] */
+/* SMALL SCREENS */
 @media screen and (max-width: 480px) {
 
-    /* (A) BREAK INTO VERTICAL MENU */
     #hamitems a {
         box-sizing: border-box;
         display: block;
@@ -211,7 +238,6 @@ article {
         border-top: 1px solid #333;
     }
 
-    /* (B) SHOW HAMBURGER ICON */
     #hamnav label {
         display: inline-block;
         color: white;
@@ -219,10 +245,9 @@ article {
         font-style: normal;
         font-size: 1.6em;
         padding: 10px;
-        float: right;
+        /* float:; */
     }
 
-    /* (C) TOGGLE SHOW/HIDE MENU */
     #hamitems {
         display: none;
     }
