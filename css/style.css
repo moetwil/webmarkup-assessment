@@ -34,6 +34,15 @@
         width: 50%;
     }
 
+    aside {
+        background-color: #ffff66;
+        width: 25em;
+        padding: 50px;
+        float: left;
+
+        grid-area: asideTag;
+    }
+
 }
 
 
@@ -64,7 +73,7 @@
 
     .articleParagraph {
         width: 50%;
-        float: rightd;
+        float: right;
 
     }
 
@@ -87,6 +96,22 @@
             'losangelesTag losangelesTag  losangelesTag'
             'newyorkTag newyorkTag  newyorkTag'
             'footerTag  footerTag   cookieTag';
+    }
+
+    .articleImage {
+        width: 200px;
+        /* clear: both; */
+        position: relative;
+        margin: 50px;
+    }
+
+    .articleParagraph {
+        width: 100%;
+
+    }
+
+    aside {
+        width: 100%;
     }
 
 }
@@ -133,9 +158,7 @@ nav {
 
 aside {
     background-color: #ffff66;
-    width: 25em;
-    padding: 50px;
-    float: left;
+    /* float: left; */
 
     grid-area: asideTag;
 }
@@ -236,7 +259,7 @@ article {
         font-style: normal;
         font-size: 1.6em;
         padding: 10px;
-        float: right;
+        /* float: right; */
     }
 
     /* (C) TOGGLE SHOW/HIDE MENU */
