@@ -43,6 +43,11 @@
         grid-area: asideTag;
     }
 
+    video {
+        width: 320px;
+        height: 240px;
+    }
+
 }
 
 
@@ -63,6 +68,10 @@
             'footerTag  footerTag   cookieTag';
     }
 
+    aside {
+        width: 100vw;
+    }
+
     .articleImage {
         width: 200px;
         float: left;
@@ -77,10 +86,25 @@
 
     }
 
+    video {
+        width: 320px;
+        height: 240px;
+    }
+
 }
 
 /*mobile*/
 @media (max-width: 480px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
     #logo {
         display: none;
     }
@@ -97,6 +121,13 @@
             'newyorkTag newyorkTag  newyorkTag'
             'footerTag  footerTag   cookieTag';
     }
+
+    video {
+        width: 300px;
+        height: 200px;
+    }
+
+
 
     .articleImage {
         width: 200px;
@@ -211,7 +242,7 @@ article {
 /* (A) WRAPPER */
 #hamnav {
     width: 100%;
-    background: #000;
+    background: #0066cc;
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
@@ -229,7 +260,7 @@ article {
 }
 
 #hamitems a:hover {
-    background: #401408;
+    background: red;
 }
 
 /* (C) HIDE HAMBURGER */
@@ -247,7 +278,7 @@ article {
     #hamitems a {
         box-sizing: border-box;
         display: block;
-        width: 100%;
+        width: 50%;
         border-top: 1px solid #333;
     }
 
@@ -255,7 +286,7 @@ article {
     #hamnav label {
         display: inline-block;
         color: white;
-        background: #a02620;
+        background: #0066cc;
         font-style: normal;
         font-size: 1.6em;
         padding: 10px;
