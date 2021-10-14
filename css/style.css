@@ -39,6 +39,11 @@
 
 /*mobile*/
 @media (max-width: 480px) {
+    /* body {
+        max-width: 1vw;
+    } */
+
+
 
     #grid-container {
         grid-template-areas:
@@ -97,6 +102,7 @@ aside {
     background-color: #ffff66;
     width: 25em;
     padding: 50px;
+    float: left;
 
     grid-area: asideTag;
 }
@@ -114,10 +120,32 @@ footer {
     grid-area: cookieTag;
 }
 
-.article-container {
+#logo {
+    width: 100px;
+}
+
+#mobile-nav {
+    grid-area: mobileNavTag;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .article-container {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 article {
     padding: 50px;
@@ -127,8 +155,79 @@ article {
     width: 200px;
     float: right;
     clear: both;
+    position: relative;
+    top: -120px;
 }
 
 .articleParagraph {
     width: 50%;
+}
+
+
+
+
+
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: #000;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+    display: flex;
+}
+
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamitems a:hover {
+    background: #401408;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
+    display: none;
+}
+
+
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 480px) {
+
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.6em;
+        padding: 10px;
+        float: right;
+    }
+
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems {
+        display: none;
+    }
+
+    #hamnav input:checked~#hamitems {
+        display: block;
+    }
 }

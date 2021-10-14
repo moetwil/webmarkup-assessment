@@ -12,19 +12,22 @@
 <body>
     <section id="grid-container">
         <header>
-            Logo
+            <a href="index.html"><img src="/img/logo.png" alt="logo van de website" id="logo"></a>
             <h1>Besttrips</h1>
             <h2>Discover your smile</h2>
         </header>
-        <nav>
-            <ul>
-                <li><a href="bestdestinations.html">Best destinations</a></li>
-                <li><a href="tickets.html">Tickets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <section id="hamitems">
+                <a href="bestdestinations.html">Best destionations</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="contact.html">Contact</a>
+            </section>
         </nav>
+
         <section id="videoSection">
-            <video width="100%" height="500px" autoplay muted loop>
+            <video width="320" height="240" autoplay muted loop>
                 <source src="videos/golden-mp4.mp4" type="video/mp4">
                 <source src="videos/golden-ogv.ogv" type="video/ogg">
                 Your browser does not support the video tag.
