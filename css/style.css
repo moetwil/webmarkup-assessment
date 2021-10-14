@@ -202,6 +202,13 @@ footer {
 
 #cookieStatement {
     background-color: #ff6600;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 30vw;
+    color: #FFF;
+    background-color: #FA0;
+    opacity: 50%;
 
 
     grid-area: cookieTag;
