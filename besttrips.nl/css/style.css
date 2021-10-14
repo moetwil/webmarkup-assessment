@@ -3,3 +3,132 @@
     margin: 0;
     border: 0;
 }
+
+/*grid*/
+
+#grid-container {
+    width: 100%;
+    display: grid;
+
+    grid-template-areas:
+        'headerTag  headerTag   headerTag'
+        'navTag navTag  navTag'
+        'videoTag   videoTag    videoTag'
+        'newyorkTag newyorkTag  asideTag'
+        'losangelesTag losangelesTag  asideTag'
+        'sanfranciscoTag sanfranciscoTag  asideTag'
+        'footerTag  footerTag   cookieTag';
+}
+
+/*tablet*/
+@media (min-width: 481px) and (max-width: 1179px) {
+
+    #grid-container {
+        grid-template-areas:
+            'headerTag  headerTag   headerTag'
+            'navTag navTag  navTag'
+            'asidetag   asideTag    asideTag'
+            'videoTag   videoTag    videoTag'
+            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
+            'losangelesTag losangelesTag  losangelesTag'
+            'newyorkTag newyorkTag  newyorkTag'
+            'footerTag  footerTag   cookieTag';
+    }
+
+}
+
+/*mobile*/
+@media (max-width: 480px) {
+
+    #grid-container {
+        grid-template-areas:
+            'headerTag  headerTag   navTag'
+            'asidetag   asideTag    asideTag'
+            'videoTag   videoTag    videoTag'
+            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
+            'losangelesTag losangelesTag  losangelesTag'
+            'newyorkTag newyorkTag  newyorkTag'
+            'footerTag  footerTag   cookieTag';
+    }
+
+}
+
+
+
+
+
+header {
+    background-color: #808080;
+
+    grid-area: headerTag;
+}
+
+nav {
+    background-color: #0066cc;
+
+    grid-area: navTag;
+}
+
+#videoSection {
+    background-color: #ff9966;
+
+    grid-area: videoTag;
+}
+
+#articleNewYork {
+    background-color: #99ffcc;
+
+    grid-area: newyorkTag;
+}
+
+#articleLosAngeles {
+    background-color: #99ff99;
+
+    grid-area: losangelesTag;
+}
+
+#articleSanFrancisco {
+    background-color: #99ff66;
+
+    grid-area: sanfranciscoTag;
+}
+
+aside {
+    background-color: #ffff66;
+    width: 25em;
+    padding: 50px;
+
+    grid-area: asideTag;
+}
+
+footer {
+    background-color: #6699ff;
+
+    grid-area: footerTag;
+}
+
+#cookieStatement {
+    background-color: #ff6600;
+
+
+    grid-area: cookieTag;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    padding: 50px;
+}
+
+.articleImage {
+    width: 200px;
+    float: right;
+    clear: both;
+}
+
+.articleParagraph {
+    width: 50%;
+}
