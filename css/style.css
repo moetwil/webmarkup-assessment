@@ -291,7 +291,7 @@ article {
 
 
 /*TABLET*/
-@media (min-width: 481px) and (max-width: 1179px) {
+@media screen and (min-width: 481px) and (max-width: 1179px) {
 
     /*--------------------INDEX--------------------*/
 
@@ -337,6 +337,38 @@ article {
 
 
     /*--------------------BEST DESTIONATIONS--------------------*/
+    /*BEST-DESTIONATIONS GRID*/
+    #grid-container-best-destination {
+        width: 100%;
+        display: grid;
+
+        grid-template-columns: 50% 50%;
+
+        grid-template-areas:
+            'headerTag          headerTag'
+            'navTag             navTag'
+            'destination-1Tag   destination-2Tag'
+            'destination-1Tag   destination-2Tag'
+            'destination-3Tag   destination-2Tag'
+            'destination-3Tag   destination-2Tag'
+            'destination-3Tag   destination-5Tag'
+            'destination-3Tag   destination-5Tag'
+            'destination-6Tag   destination-6Tag'
+            'destination-6Tag   destination-6Tag'
+            'best-asideTag   best-aisdeTag'
+            'footerTag   cookieTag'
+
+
+        ;
+    }
+
+    #destination-4,
+    #product-3 {
+        display: none;
+    }
+
+
+
 }
 
 
