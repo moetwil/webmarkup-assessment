@@ -183,6 +183,27 @@ article {
     grid-area: best-asideTag;
 }
 
+#article-ticket {
+    background-color: #f3ec25;
+    grid-area: ticketInfoTag;
+}
+
+#ticket-section {
+    background-color: #25c3f3;
+    grid-area: ticketTag;
+}
+
+#tickets-aside {
+    background-color: #747474;
+    grid-area: ticketAsideTag;
+}
+
+#copyright {
+    grid-area: copyrightTag;
+    background-color: red;
+}
+
+
 /*INDEX DESKTOP GRID*/
 #grid-container {
     width: 100%;
@@ -220,6 +241,31 @@ article {
 
     ;
 }
+
+/*TICKETS GRID*/
+#grid-container-tickets {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 40% 30% 30%;
+
+    grid-template-areas:
+        'headerTag          headerTag        headerTag'
+        'navTag             navTag           navTag'
+        'ticketInfoTag      ticketInfoTag    ticketInfoTag'
+        'ticketTag          ticketTag        ticketAsideTag'
+        'copyrightTag       copyrightTag     ticketAsideTag'
+        'footerTag          footerTag        cookieTag'
+
+
+
+    ;
+}
+
+
+
+
+
 
 /*DESKTOP CSS*/
 @media (min-width: 1180px) {
@@ -303,6 +349,38 @@ article {
 
 
     }
+
+
+
+    /*--------------------TICKETS--------------------*/
+    #cookieStatement-tickets {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 30%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+
+
+        grid-area: cookieTag;
+
+    }
+
+    #grid-container-tickets {
+        grid-template-rows: auto auto auto 80vh auto auto;
+    }
+
+    #tickets-aside {
+        padding: 50px
+    }
+
+    #ticket-section {
+        padding: 50px;
+    }
+
 }
 
 
@@ -564,6 +642,10 @@ article {
         opacity: 50%;
         z-index: 9999;
     }
+
+
+    /*--------------------TICKETS--------------------*/
+
 }
 
 
