@@ -145,6 +145,23 @@ article {
         'footerTag  footerTag   cookieTag';
 }
 
+#grid-container-bd {
+    width: 100%;
+    display: grid;
+
+    grid-template-areas:
+        'headerTag  headerTag   headerTag'
+        'navTag navTag  navTag'
+        'videoTag   videoTag    videoTag'
+        'newyorkTag newyorkTag  asideTag'
+        'losangelesTag losangelesTag  asideTag'
+        'sanfranciscoTag sanfranciscoTag  asideTag'
+        'footerTag  footerTag   cookieTag';
+}
+
+
+
+
 /*DESKTOP CSS*/
 @media (min-width: 1180px) {
 
