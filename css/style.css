@@ -36,6 +36,8 @@
     background: red;
 }
 
+
+
 /*HIDE HAMBURGER*/
 #hamnav label,
 #hamburger {
@@ -429,7 +431,7 @@ article {
 
 
 /*MOBILE*/
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     html,
     body {
@@ -449,7 +451,7 @@ article {
 
     #grid-container {
         grid-template-areas:
-            'headerTag  headerTag   navTag'
+            'headerTag  headerTag   hamnavTag'
             'asidetag   asideTag    asideTag'
             'videoTag   videoTag    videoTag'
             'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
@@ -475,7 +477,96 @@ article {
     aside {
         width: 100%;
     }
+
+
+    /*--------------------BEST DESTINATIONS--------------------*/
+
+    /*BEST-DESTIONATIONS GRID*/
+
+    #hamnav {
+        grid-area: hamnavTag;
+    }
+
+    #destination-5 {
+        grid-area: destination5Tag;
+    }
+
+    #destination-3 {
+        grid-area: destination3Tag;
+    }
+
+    #destination-2 {
+        grid-area: destination2Tag;
+    }
+
+    #destination-1 {
+        grid-area: destination1Tag;
+    }
+
+    #product-1 {
+        grid-area: product1Tag;
+    }
+
+    #grid-container-best-destination {
+
+        grid-template-columns: 60% 40%;
+        /* grid-template-rows: auto auto auto auto auto auto auto 10px; */
+
+        grid-template-areas:
+            'headerTag          hamnavTag'
+            'destination5Tag   destination5Tag'
+            'destination3Tag   destination3Tag'
+            'destination2Tag   destination2Tag'
+            'destination1Tag   destination1Tag'
+            'best-asideTag   best-asideTag'
+            'footerTag cookieTag'
+
+
+
+        ;
+    }
+
+    .product-image {
+        width: 150px;
+    }
+
+    #product-1,
+    #product-2,
+    #product-3 {
+        padding: 20px;
+    }
+
+    #product-1 {
+        width: 100%;
+    }
+
+    #product-2 {
+        width: 100%;
+    }
+
+    #product-3 {
+        width: 100%;
+    }
+
+    #destination-4,
+    #destination-6 {
+        display: none;
+    }
+
+    #cookieStatement-best {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+    }
 }
+
+
 
 #cookieStatement {
     background-color: #ff6600;
