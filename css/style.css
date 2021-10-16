@@ -109,7 +109,7 @@ nav {
     grid-area: sanfranciscoTag;
 }
 
-aside {
+#index-aside {
     background-color: #ffff66;
 
     grid-area: asideTag;
@@ -129,6 +129,50 @@ article {
     padding: 50px;
 }
 
+#destination-1 {
+    background-color: #ffe96f;
+    grid-area: destination-1Tag;
+}
+
+#destination-2 {
+    background-color: #99ff66;
+    grid-area: destination-2Tag;
+}
+
+#destination-3 {
+    background-color: #278dec;
+    grid-area: destination-3Tag;
+}
+
+#destination-4 {
+    background-color: #2f790a;
+    grid-area: destination-4Tag;
+}
+
+#destination-5 {
+    background-color: #74c04f;
+    grid-area: destination-5Tag;
+}
+
+#destination-6 {
+    background-color: #e0cd5f;
+    grid-area: destination-6Tag;
+}
+
+#product-1 {
+    background-color: #808080;
+    grid-area: product-1Tag;
+}
+
+#product-2 {
+    background-color: #6e6e6e;
+    grid-area: product-2Tag;
+}
+
+#product-3 {
+    background-color: #444444;
+    grid-area: product-3Tag;
+}
 
 /*INDEX DESKTOP GRID*/
 #grid-container {
@@ -145,18 +189,26 @@ article {
         'footerTag  footerTag   cookieTag';
 }
 
-#grid-container-bd {
+/*BEST-DESTIONATIONS GRID*/
+#grid-container-best-destination {
     width: 100%;
     display: grid;
 
+    grid-template-columns: 40% 30% 30%;
+
     grid-template-areas:
-        'headerTag  headerTag   headerTag'
-        'navTag navTag  navTag'
-        'videoTag   videoTag    videoTag'
-        'newyorkTag newyorkTag  asideTag'
-        'losangelesTag losangelesTag  asideTag'
-        'sanfranciscoTag sanfranciscoTag  asideTag'
-        'footerTag  footerTag   cookieTag';
+        'headerTag          headerTag        headerTag'
+        'navTag             navTag           navTag'
+        'destination-2Tag   destination-1Tag destination-3Tag'
+        'destination-2Tag   destination-1Tag destination-3Tag'
+        'destination-2Tag   destination-1Tag destination-3Tag'
+        'destination-2Tag   destination-1Tag destination-4Tag'
+        'destination-5Tag   destination-1Tag destination-4Tag'
+        'destination-5Tag   destination-1Tag destination-4Tag'
+        'destination-5Tag   destination-6Tag destination-6Tag'
+        'asideTag           asideTag         asideTag '
+        'footerTag          footerTag        cookieTag'
+    ;
 }
 
 
@@ -179,7 +231,7 @@ article {
         word-spacing: .2rem;
     }
 
-    aside {
+    #index-aside {
         background-color: #ffff66;
         width: 25em;
         padding: 50px;
@@ -200,6 +252,9 @@ article {
 
 
     /*--------------------BEST DESTIONATIONS--------------------*/
+    .product-image {
+        width: 20px;
+    }
 }
 
 
