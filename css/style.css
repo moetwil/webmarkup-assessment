@@ -283,6 +283,24 @@ article {
     #product-3 {
         width: 30%;
     }
+
+    #cookieStatement-best {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 30%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+
+
+        grid-area: cookieTag;
+
+
+
+    }
 }
 
 
@@ -387,6 +405,18 @@ article {
 
     #product-2 {
         width: 50%;
+    }
+
+    #cookieStatement-best {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
     }
 
 
