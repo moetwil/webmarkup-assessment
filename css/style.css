@@ -367,6 +367,28 @@ article {
         display: none;
     }
 
+    .product-image {
+        width: 150px;
+    }
+
+    #best-aside {
+        /* padding: 20px; */
+        display: flex;
+    }
+
+    #product-1,
+    #product-2 {
+        padding: 20px;
+    }
+
+    #product-1 {
+        width: 50%;
+    }
+
+    #product-2 {
+        width: 50%;
+    }
+
 
 
 }
