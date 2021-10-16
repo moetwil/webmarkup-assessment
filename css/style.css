@@ -160,18 +160,25 @@ article {
 }
 
 #product-1 {
+    width: 40%;
     background-color: #808080;
-    grid-area: product-1Tag;
+    grid-area: product1Tag;
 }
 
 #product-2 {
+    width: 30%;
     background-color: #6e6e6e;
-    grid-area: product-2Tag;
+    grid-area: product2Tag;
 }
 
 #product-3 {
+    width: 30%;
     background-color: #444444;
-    grid-area: product-3Tag;
+    grid-area: product3Tag;
+}
+
+#best-aside {
+    grid-area: best-asideTag;
 }
 
 /*INDEX DESKTOP GRID*/
@@ -206,13 +213,11 @@ article {
         'destination-5Tag   destination-1Tag destination-4Tag'
         'destination-5Tag   destination-1Tag destination-4Tag'
         'destination-5Tag   destination-6Tag destination-6Tag'
-        'asideTag           asideTag         asideTag '
+        'best-asideTag      best-asideTag    best-asideTag'
         'footerTag          footerTag        cookieTag'
+
     ;
 }
-
-
-
 
 /*DESKTOP CSS*/
 @media (min-width: 1180px) {
@@ -253,24 +258,32 @@ article {
 
     /*--------------------BEST DESTIONATIONS--------------------*/
     .product-image {
-        width: 20px;
+        width: 200px;
+    }
+
+    #best-aside {
+        /* padding: 20px; */
+        display: flex;
+    }
+
+    #product-1,
+    #product-2,
+    #product-3 {
+        padding: 50px;
+    }
+
+    #product-1 {
+        width: 40%;
+    }
+
+    #product-2 {
+        width: 30%;
+    }
+
+    #product-3 {
+        width: 30%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -325,21 +338,6 @@ article {
 
     /*--------------------BEST DESTIONATIONS--------------------*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -409,14 +407,6 @@ article {
 
     grid-area: cookieTag;
 
-
-
-
-
-
-
-
-    /*--------------------BEST DESTIONATIONS--------------------*/
 
 
 }
