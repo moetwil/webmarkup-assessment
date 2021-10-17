@@ -5,10 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contact</title>
 </head>
 
 <body>
+
+
+    <section id="grid-container-contact">
+        <header>
+            <a href="index.html"><img src="/img/logo.png" alt="logo van de website" id="logo"></a>
+            <h1>Best Trips</h1>
+            <h2>Discover your smile</h2>
+        </header>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <section id="hamitems">
+                <a href="index.html">Home</a>
+                <a href="bestdestinations.html">Best destionations</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="contact.html">Contact</a>
+            </section>
+        </nav>
+
+        <section id="contact-information">
+            <ul>
+                <li>Adres</li>
+                <li>0612345678</li>
+                <li>info@besttrips.com</li>
+            </ul>
+        </section>
+
+        <section id="contact-section">
+            <form action="vote.php" method="post">
+
+                <fieldset>
+
+                    <legend>Contact Form</legend>
+
+                    <label for="name">First Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                    <label for="email">Your Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="message">Your Message*</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"
+                        required></textarea>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+
+
+
+        <aside id="contact-aside">
+            <h2>3 Products</h2>
+            <section id="product-section">
+                <figure id="product-curacao">
+                    <h3>Curacao</h3>
+                    <a
+                        href="https://www.tui.nl/reizen/curacao/?_smstate=1$1_503_9990466$37_30005_12$60_30001_8$-17_30002_1$-18_30003_21$46_-1_-1$37_30005_4">
+                        <img src="/img/curacao.jpg" alt="image of curacao" class="product-image">
+                    </a>
+                </figure>
+
+                <figure id="product-spain">
+                    <h3>Spain</h3>
+                    <a
+                        href="https://www.tui.nl/reizen/spanje/?_smstate=1$1_503_54000$37_30005_12$60_30001_8$-17_30002_1$-18_30003_21$46_-1_-1$37_30005_4">
+                        <img src="/img/spanje.jpg" alt="image of spain" class="product-image">
+                    </a>
+                </figure>
+
+                <figure id="product-greece">
+                    <h3>Greece</h3>
+                    <a
+                        href="https://www.tui.nl/reizen/griekenland/?_smstate=1$1_503_18000$37_30005_12$60_30001_8$-17_30002_1$-18_30003_21$46_-1_-1$37_30005_4">
+                        <img src="/img/griekenland.jpg" alt="image of greece" class="product-image">
+                    </a>
+                </figure>
+            </section>
+
+
+
+        </aside>
+
+
+
+        <footer>
+            &copy; 2021 Luc Moetwil
+        </footer>
+        <section id="cookieStatement-contact">
+            Cookie statement
+        </section>
+
+
+    </section>
 
 </body>
 

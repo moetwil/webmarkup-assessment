@@ -203,6 +203,26 @@ article {
     background-color: red;
 }
 
+#contact-information {
+    background-color: yellow;
+    grid-area: contactInfoTag;
+}
+
+#contact-section {
+    background-color: lightskyblue;
+    grid-area: formTag;
+}
+
+#contact-aside {
+    background-color: #464444;
+    grid-area: contactAsideTag;
+}
+
+
+
+
+
+
 
 /*INDEX DESKTOP GRID*/
 #grid-container {
@@ -261,6 +281,28 @@ article {
 
     ;
 }
+
+
+/*CONTACT GRID*/
+#grid-container-contact {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: 40% 30% 30%;
+
+    grid-template-areas:
+        'headerTag          headerTag        headerTag'
+        'navTag             navTag           navTag'
+        'contactInfoTag     contactInfoTag   contactInfoTag'
+        'formTag            formTag          contactAsideTag'
+        'footerTag          footerTag        cookieTag'
+
+
+
+    ;
+}
+
+
 
 
 
@@ -403,6 +445,79 @@ article {
         background-color: #dddddd;
 
     }
+
+
+    /*--------------------CONTACT--------------------*/
+    #grid-container-contact {
+        grid-template-rows: auto auto auto 1000px auto;
+    }
+
+
+    fieldset {
+        background-color: #eeeeee;
+    }
+
+    legend {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    input {
+        margin: 5px;
+    }
+
+
+    /*Contact styling*/
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #aa04aa;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #c2c505;
+    }
+
+    #contact-section {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    #cookieStatement-contact {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 30%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+
+
+        grid-area: cookieTag;
+
+    }
+
 }
 
 
