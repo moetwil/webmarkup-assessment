@@ -533,6 +533,10 @@ article {
         background-color: #25c3f3;
         grid-area: ticketTag;
         padding: 50px;
+        border: solid;
+        border-style: double;
+        border-width: 10px;
+        border-color: purple;
     }
 
     #tickets-aside {
@@ -609,8 +613,9 @@ article {
 
     }
 
-
-
+    th:first-child {
+        color: #FF0;
+    }
 }
 
 
@@ -755,6 +760,87 @@ article {
 
 
     /*--------------------TICKETS--------------------*/
+
+    /*BEST-DESTIONATIONS GRID*/
+    #article-ticket {
+        background-color: #f3ec25;
+        grid-area: ticketInfoTag;
+        display: none;
+    }
+
+    #ticket-section {
+        background-color: #25c3f3;
+        grid-area: ticketTag;
+    }
+
+    #tickets-aside {
+        background-color: #747474;
+        grid-area: ticketAsideTag;
+    }
+
+    #product-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #copyright {
+        grid-area: copyrightTag;
+        background-color: red;
+    }
+
+    #grid-container-tickets {
+        width: 100%;
+        display: grid;
+
+        grid-template-columns: 50% 50%;
+
+        grid-template-areas:
+            'headerTag          hamnavTag'
+            'ticketInfoTag      ticketInfoTag'
+            'ticketTag          ticketTag'
+            'copyrightTag       copyrightTag'
+            'ticketAsideTag     ticketAsideTag'
+            'footerTag          cookieTag'
+
+
+        ;
+    }
+
+    #cookieStatement-tickets {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+
+    }
+
+    th:first-child {
+        color: #FF0;
+    }
 
 }
 
