@@ -374,296 +374,317 @@ article {
     }
 
     #tickets-aside {
-        padding: 50px
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     #ticket-section {
         padding: 50px;
     }
 
-}
 
-
-
-
-
-
-/*TABLET*/
-@media screen and (min-width: 481px) and (max-width: 1179px) {
-
-    /*--------------------INDEX--------------------*/
-
-    #grid-container {
-        grid-template-areas:
-            'headerTag  headerTag   headerTag'
-            'navTag navTag  navTag'
-            'asidetag   asideTag    asideTag'
-            'videoTag   videoTag    videoTag'
-            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
-            'losangelesTag losangelesTag  losangelesTag'
-            'newyorkTag newyorkTag  newyorkTag'
-            'footerTag  footerTag   cookieTag';
-    }
-
-    aside {
-        width: 100vw;
-    }
-
-    .articleImage {
-        width: 200px;
-        float: left;
-        clear: both;
-        position: relative;
-        top: -120px;
-    }
-
-    .articleParagraph {
-        width: 50%;
-        float: right;
-    }
-
-    video {
-        width: 320px;
-        height: 240px;
-    }
-
-    figure>figcaption {
-        float: left;
-        clear: both;
-    }
-
-
-
-    /*--------------------BEST DESTIONATIONS--------------------*/
-    /*BEST-DESTIONATIONS GRID*/
-    #grid-container-best-destination {
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
         width: 100%;
-        display: grid;
-
-        grid-template-columns: 50% 50%;
-
-        grid-template-areas:
-            'headerTag          headerTag'
-            'navTag             navTag'
-            'destination-1Tag   destination-2Tag'
-            'destination-1Tag   destination-2Tag'
-            'destination-3Tag   destination-2Tag'
-            'destination-3Tag   destination-2Tag'
-            'destination-3Tag   destination-5Tag'
-            'destination-3Tag   destination-5Tag'
-            'destination-6Tag   destination-6Tag'
-            'destination-6Tag   destination-6Tag'
-            'best-asideTag   best-aisdeTag'
-            'footerTag   cookieTag'
-
-
-        ;
     }
 
-    #destination-4,
-    #product-3 {
-        display: none;
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
     }
 
-    .product-image {
-        width: 150px;
+    tr:nth-child(even) {
+        background-color: #dddddd;
+
     }
 
-    #best-aside {
-        /* padding: 20px; */
-        display: flex;
+
+
+
+
+
+    /*TABLET*/
+    @media screen and (min-width: 481px) and (max-width: 1179px) {
+
+        /*--------------------INDEX--------------------*/
+
+        #grid-container {
+            grid-template-areas:
+                'headerTag  headerTag   headerTag'
+                'navTag navTag  navTag'
+                'asidetag   asideTag    asideTag'
+                'videoTag   videoTag    videoTag'
+                'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
+                'losangelesTag losangelesTag  losangelesTag'
+                'newyorkTag newyorkTag  newyorkTag'
+                'footerTag  footerTag   cookieTag';
+        }
+
+        aside {
+            width: 100vw;
+        }
+
+        .articleImage {
+            width: 200px;
+            float: left;
+            clear: both;
+            position: relative;
+            top: -120px;
+        }
+
+        .articleParagraph {
+            width: 50%;
+            float: right;
+        }
+
+        video {
+            width: 320px;
+            height: 240px;
+        }
+
+        figure>figcaption {
+            float: left;
+            clear: both;
+        }
+
+
+
+        /*--------------------BEST DESTIONATIONS--------------------*/
+        /*BEST-DESTIONATIONS GRID*/
+        #grid-container-best-destination {
+            width: 100%;
+            display: grid;
+
+            grid-template-columns: 50% 50%;
+
+            grid-template-areas:
+                'headerTag          headerTag'
+                'navTag             navTag'
+                'destination-1Tag   destination-2Tag'
+                'destination-1Tag   destination-2Tag'
+                'destination-3Tag   destination-2Tag'
+                'destination-3Tag   destination-2Tag'
+                'destination-3Tag   destination-5Tag'
+                'destination-3Tag   destination-5Tag'
+                'destination-6Tag   destination-6Tag'
+                'destination-6Tag   destination-6Tag'
+                'best-asideTag   best-aisdeTag'
+                'footerTag   cookieTag'
+
+
+            ;
+        }
+
+        #destination-4,
+        #product-3 {
+            display: none;
+        }
+
+        .product-image {
+            width: 150px;
+        }
+
+        #best-aside {
+            /* padding: 20px; */
+            display: flex;
+        }
+
+        #product-1,
+        #product-2 {
+            padding: 20px;
+        }
+
+        #product-1 {
+            width: 50%;
+        }
+
+        #product-2 {
+            width: 50%;
+        }
+
+        #cookieStatement-best {
+            background-color: #ff6600;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            color: #FFF;
+            background-color: #FA0;
+            opacity: 50%;
+            z-index: 9999;
+        }
+
+
+
     }
 
-    #product-1,
-    #product-2 {
-        padding: 20px;
+
+
+
+
+
+    /*MOBILE*/
+    @media screen and (max-width: 480px) {
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
+            position: relative
+        }
+
+        #logo {
+            display: none;
+        }
+
+
+        /*INDEX*/
+
+        #grid-container {
+            grid-template-areas:
+                'headerTag  headerTag   hamnavTag'
+                'asidetag   asideTag    asideTag'
+                'videoTag   videoTag    videoTag'
+                'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
+                'losangelesTag losangelesTag  losangelesTag'
+                'newyorkTag newyorkTag  newyorkTag'
+                'footerTag  footerTag   cookieTag';
+        }
+
+        video {
+            display: none;
+        }
+
+        .articleImage {
+            width: 200px;
+            position: relative;
+            margin: 50px;
+        }
+
+        .articleParagraph {
+            width: 100%;
+        }
+
+        aside {
+            width: 100%;
+        }
+
+
+        /*--------------------BEST DESTINATIONS--------------------*/
+
+        /*BEST-DESTIONATIONS GRID*/
+
+        #hamnav {
+            grid-area: hamnavTag;
+        }
+
+        #destination-5 {
+            grid-area: destination5Tag;
+        }
+
+        #destination-3 {
+            grid-area: destination3Tag;
+        }
+
+        #destination-2 {
+            grid-area: destination2Tag;
+        }
+
+        #destination-1 {
+            grid-area: destination1Tag;
+        }
+
+        #product-1 {
+            grid-area: product1Tag;
+        }
+
+        #grid-container-best-destination {
+
+            grid-template-columns: 60% 40%;
+            /* grid-template-rows: auto auto auto auto auto auto auto 10px; */
+
+            grid-template-areas:
+                'headerTag          hamnavTag'
+                'destination5Tag   destination5Tag'
+                'destination3Tag   destination3Tag'
+                'destination2Tag   destination2Tag'
+                'destination1Tag   destination1Tag'
+                'best-asideTag   best-asideTag'
+                'footerTag cookieTag'
+
+
+
+            ;
+        }
+
+        .product-image {
+            width: 150px;
+        }
+
+        #product-1,
+        #product-2,
+        #product-3 {
+            padding: 20px;
+        }
+
+        #product-1 {
+            width: 100%;
+        }
+
+        #product-2 {
+            width: 100%;
+        }
+
+        #product-3 {
+            width: 100%;
+        }
+
+        #destination-4,
+        #destination-6 {
+            display: none;
+        }
+
+        #cookieStatement-best {
+            background-color: #ff6600;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 40%;
+            color: #FFF;
+            background-color: #FA0;
+            opacity: 50%;
+            z-index: 9999;
+        }
+
+
+        /*--------------------TICKETS--------------------*/
+
     }
 
-    #product-1 {
-        width: 50%;
-    }
 
-    #product-2 {
-        width: 50%;
-    }
 
-    #cookieStatement-best {
+    #cookieStatement {
         background-color: #ff6600;
         position: fixed;
         right: 0;
         bottom: 0;
-        width: 50%;
+        width: 30vw;
         color: #FFF;
         background-color: #FA0;
         opacity: 50%;
         z-index: 9999;
+
+
+        grid-area: cookieTag;
+
+
+
     }
-
-
-
-}
-
-
-
-
-
-
-/*MOBILE*/
-@media screen and (max-width: 480px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    body {
-        position: relative
-    }
-
-    #logo {
-        display: none;
-    }
-
-
-    /*INDEX*/
-
-    #grid-container {
-        grid-template-areas:
-            'headerTag  headerTag   hamnavTag'
-            'asidetag   asideTag    asideTag'
-            'videoTag   videoTag    videoTag'
-            'sanfranciscoTag sanfranciscoTag  sanfranciscoTag'
-            'losangelesTag losangelesTag  losangelesTag'
-            'newyorkTag newyorkTag  newyorkTag'
-            'footerTag  footerTag   cookieTag';
-    }
-
-    video {
-        display: none;
-    }
-
-    .articleImage {
-        width: 200px;
-        position: relative;
-        margin: 50px;
-    }
-
-    .articleParagraph {
-        width: 100%;
-    }
-
-    aside {
-        width: 100%;
-    }
-
-
-    /*--------------------BEST DESTINATIONS--------------------*/
-
-    /*BEST-DESTIONATIONS GRID*/
-
-    #hamnav {
-        grid-area: hamnavTag;
-    }
-
-    #destination-5 {
-        grid-area: destination5Tag;
-    }
-
-    #destination-3 {
-        grid-area: destination3Tag;
-    }
-
-    #destination-2 {
-        grid-area: destination2Tag;
-    }
-
-    #destination-1 {
-        grid-area: destination1Tag;
-    }
-
-    #product-1 {
-        grid-area: product1Tag;
-    }
-
-    #grid-container-best-destination {
-
-        grid-template-columns: 60% 40%;
-        /* grid-template-rows: auto auto auto auto auto auto auto 10px; */
-
-        grid-template-areas:
-            'headerTag          hamnavTag'
-            'destination5Tag   destination5Tag'
-            'destination3Tag   destination3Tag'
-            'destination2Tag   destination2Tag'
-            'destination1Tag   destination1Tag'
-            'best-asideTag   best-asideTag'
-            'footerTag cookieTag'
-
-
-
-        ;
-    }
-
-    .product-image {
-        width: 150px;
-    }
-
-    #product-1,
-    #product-2,
-    #product-3 {
-        padding: 20px;
-    }
-
-    #product-1 {
-        width: 100%;
-    }
-
-    #product-2 {
-        width: 100%;
-    }
-
-    #product-3 {
-        width: 100%;
-    }
-
-    #destination-4,
-    #destination-6 {
-        display: none;
-    }
-
-    #cookieStatement-best {
-        background-color: #ff6600;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        width: 40%;
-        color: #FFF;
-        background-color: #FA0;
-        opacity: 50%;
-        z-index: 9999;
-    }
-
-
-    /*--------------------TICKETS--------------------*/
-
-}
-
-
-
-#cookieStatement {
-    background-color: #ff6600;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 30vw;
-    color: #FFF;
-    background-color: #FA0;
-    opacity: 50%;
-    z-index: 9999;
-
-
-    grid-area: cookieTag;
-
-
-
-}
