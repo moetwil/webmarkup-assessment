@@ -522,6 +522,94 @@ article {
     }
 
 
+    /*--------------------TICKETS--------------------*/
+    /*BEST-DESTIONATIONS GRID*/
+    #article-ticket {
+        background-color: #f3ec25;
+        grid-area: ticketInfoTag;
+    }
+
+    #ticket-section {
+        background-color: #25c3f3;
+        grid-area: ticketTag;
+        padding: 50px;
+    }
+
+    #tickets-aside {
+        background-color: #747474;
+        grid-area: ticketAsideTag;
+        padding: 20px;
+    }
+
+    #product-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #copyright {
+        grid-area: copyrightTag;
+        background-color: red;
+    }
+
+    #product-curacao {
+        display: none;
+    }
+
+    #grid-container-tickets {
+        width: 100%;
+        display: grid;
+
+        grid-template-columns: 50% 50%;
+
+        grid-template-areas:
+            'headerTag          headerTag'
+            'navTag             navTag'
+            'ticketInfoTag      ticketInfoTag'
+            'ticketTag          ticketTag'
+            'copyrightTag       copyrightTag'
+            'ticketAsideTag     ticketAsideTag'
+            'footerTag          cookieTag'
+
+
+        ;
+    }
+
+    #cookieStatement-tickets {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+
+
+        grid-area: cookieTag;
+
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+
+    }
+
+
 
 }
 
