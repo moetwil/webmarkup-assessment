@@ -72,6 +72,72 @@
 }
 
 
+/**/
+
+/* DESKTOP */
+#hamnav-index {
+    width: 100%;
+    background: #0066cc;
+}
+
+#hamitems {
+    display: flex;
+}
+
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 1em;
+    text-indent: 5px;
+    font-family: 'Notable', sans-serif;
+}
+
+#hamitems a:hover {
+    background: red;
+}
+
+
+
+/*HIDE HAMBURGER*/
+#hamnav-index label,
+#hamburger {
+    display: none;
+}
+
+/* HAMBURGER MENU MOBILE */
+@media screen and (max-width: 480px) {
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 50%;
+        border-top: 1px solid #333;
+    }
+
+    #hamnav-index label {
+        display: inline-block;
+        color: white;
+        background: #0066cc;
+        font-style: normal;
+        font-size: 1.6em;
+        padding: 10px;
+    }
+
+    #hamitems {
+        display: none;
+    }
+
+    #hamnav-index input:checked~#hamitems {
+        display: block;
+    }
+}
+
+
 /*--------------------INDEX.HTML--------------------*/
 
 /*Colors and grid tag's*/
@@ -318,7 +384,7 @@ article {
         order: 1;
     }
 
-    #hamnav {
+    #hamnav-index {
         order: 2;
     }
 
@@ -637,7 +703,7 @@ article {
         order: 1;
     }
 
-    #hamnav {
+    #hamnav-index {
         order: 2;
     }
 
@@ -1028,6 +1094,7 @@ article {
 
     /*INDEX*/
 
+    /*
     #grid-container {
         grid-template-areas:
             'headerTag  headerTag   hamnavTag'
@@ -1037,6 +1104,87 @@ article {
             'losangelesTag losangelesTag  losangelesTag'
             'newyorkTag newyorkTag  newyorkTag'
             'footerTag  footerTag   cookieTag';
+    }*/
+
+
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    #index-header {
+        flex-basis: 65%;
+        order: 1;
+    }
+
+    #hamnav-index {
+        flex-basis: 35%;
+        order: 2;
+        width: 20%;
+
+    }
+
+    #videoSection {
+        flex-basis: 100%;
+        order: 4;
+
+    }
+
+    #articleNewYork,
+    #articleLosAngeles,
+    #articleSanFrancisco {
+        /* order: 1; */
+        flex-grow: 0;
+        flex-basis: 100%;
+    }
+
+    #articleNewYork {
+        order: 7;
+    }
+
+    #articleLosAngeles {
+        order: 6;
+    }
+
+    #articleSanFrancisco {
+        order: 5;
+    }
+
+    #index-aside {
+        order: 3;
+        background-color: #ffff66;
+        padding: 50px;
+        flex-basis: fill;
+        flex-grow: 0;
+
+
+    }
+
+    #index-body {
+        background-color: #ffff66;
+    }
+
+
+    #cookieStatement {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        flex-basis: auto;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+    }
+
+
+    #index-footer {
+        flex-basis: 60%;
+        order: 9;
     }
 
     video {
