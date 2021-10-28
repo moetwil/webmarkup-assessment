@@ -333,7 +333,7 @@ article {
     #articleSanFrancisco {
         /* order: 1; */
         flex-grow: 0;
-        flex-basis: 55%;
+        flex-basis: 60%;
     }
 
     #articleNewYork {
@@ -352,7 +352,7 @@ article {
         order: 5;
         background-color: #ffff66;
         padding: 50px;
-        flex-basis: fill;
+        flex-basis: 20%;
         flex-grow: 0;
 
 
@@ -609,6 +609,7 @@ article {
 
     /*--------------------INDEX--------------------*/
 
+    /*
     #grid-container {
         grid-template-areas:
             'headerTag  headerTag   headerTag'
@@ -619,6 +620,84 @@ article {
             'losangelesTag losangelesTag  losangelesTag'
             'newyorkTag newyorkTag  newyorkTag'
             'footerTag  footerTag   cookieTag';
+    }
+*/
+
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    #index-header {
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    #hamnav {
+        order: 2;
+    }
+
+    #videoSection {
+        flex-basis: 100%;
+        order: 4;
+
+    }
+
+    #articleNewYork,
+    #articleLosAngeles,
+    #articleSanFrancisco {
+        /* order: 1; */
+        flex-grow: 0;
+        flex-basis: 100%;
+    }
+
+    #articleNewYork {
+        order: 7;
+    }
+
+    #articleLosAngeles {
+        order: 6;
+    }
+
+    #articleSanFrancisco {
+        order: 5;
+    }
+
+    #index-aside {
+        order: 3;
+        background-color: #ffff66;
+        padding: 50px;
+        flex-basis: fill;
+        flex-grow: 0;
+
+
+    }
+
+    #index-body {
+        background-color: #ffff66;
+    }
+
+
+    #cookieStatement {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        flex-basis: auto;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+    }
+
+
+    #index-footer {
+        flex-basis: 70%;
+        order: 9;
     }
 
     aside {
