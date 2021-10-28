@@ -89,32 +89,22 @@ nav {
 
 #videoSection {
     background-color: #ff9966;
-
-    grid-area: videoTag;
 }
 
 #articleNewYork {
     background-color: #99ffcc;
-
-    grid-area: newyorkTag;
 }
 
 #articleLosAngeles {
     background-color: #99ff99;
-
-    grid-area: losangelesTag;
 }
 
 #articleSanFrancisco {
     background-color: #99ff66;
-
-    grid-area: sanfranciscoTag;
 }
 
 #index-aside {
     background-color: #ffff66;
-
-    grid-area: asideTag;
 }
 
 footer {
@@ -225,7 +215,7 @@ article {
 
 
 /*INDEX DESKTOP GRID*/
-#grid-container {
+/*#grid-container {
     width: 100%;
     display: grid;
 
@@ -237,7 +227,7 @@ article {
         'losangelesTag losangelesTag  asideTag'
         'sanfranciscoTag sanfranciscoTag  asideTag'
         'footerTag  footerTag   cookieTag';
-}
+}*/
 
 /*BEST-DESTIONATIONS GRID*/
 #grid-container-best-destination {
@@ -313,6 +303,84 @@ article {
 @media (min-width: 1180px) {
 
     /*--------------------INDEX--------------------*/
+
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    #index-header {
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    #hamnav {
+        order: 2;
+    }
+
+    #videoSection {
+        flex-basis: 100%;
+        order: 3;
+
+    }
+
+    #articleNewYork,
+    #articleLosAngeles,
+    #articleSanFrancisco {
+        /* order: 1; */
+        flex-grow: 0;
+        flex-basis: 55%;
+    }
+
+    #articleNewYork {
+        order: 4;
+    }
+
+    #articleLosAngeles {
+        order: 6;
+    }
+
+    #articleSanFrancisco {
+        order: 7;
+    }
+
+    #index-aside {
+        order: 5;
+        background-color: #ffff66;
+        padding: 50px;
+        flex-basis: fill;
+        flex-grow: 0;
+
+
+    }
+
+    #index-body {
+        background-color: #ffff66;
+    }
+
+
+    #cookieStatement {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        flex-basis: auto;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+    }
+
+
+    #index-footer {
+        flex-basis: 60.2%;
+        order: 9;
+    }
+
     .articleImage {
         width: 200px;
         float: right;
