@@ -698,6 +698,31 @@ article {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*TABLET*/
 @media screen and (min-width: 481px) and (max-width: 1179px) {
 
@@ -1103,6 +1128,24 @@ article {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MOBILE*/
 @media screen and (max-width: 480px) {
 
@@ -1344,7 +1387,8 @@ article {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 50px;
     }
 
     #copyright {
@@ -1409,19 +1453,76 @@ article {
     #grid-container-contact {
 
         grid-template-columns: 60% 40%;
+        grid-template-rows: auto auto 50% auto auto;
 
         grid-template-areas:
             'headerTag          hamnavTag'
             'contactInfoTag     contactInfoTag'
             'formTag            formTag'
-            'contactAsideTag   contactAsideTag'
-            'footerTag cookieTag'
+            'contactAsideTag    contactAsideTag'
+            'footerTag          cookieContactTag'
 
 
 
         ;
     }
 
+    #cookieStatement-contact {
+        background-color: #ff6600;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        color: #FFF;
+        background-color: #FA0;
+        opacity: 50%;
+        z-index: 9999;
+        grid-area: cookieContactTag;
+    }
+
+    #contactHTML {
+        overflow-x: visible;
+    }
+
+    /*Contact styling*/
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #aa04aa;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #c2c505;
+    }
+
+    #contact-section {
+        border-radius: 5px;
+        background-color: purple;
+        padding: 50px;
+    }
+
+
+    #contact-aside {
+        padding: 50px;
+        width: 74%;
+    }
 
 
 }

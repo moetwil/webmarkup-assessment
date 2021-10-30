@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="contactHTML">
 
 <head>
     <meta charset="UTF-8">
@@ -13,19 +13,22 @@
 
 
     <section id="grid-container-contact">
+
         <header>
             <a href="index.html"><img src="img/logo.png" alt="logo van de website" id="logo"></a>
             <h1>Best Trips</h1>
             <h2>Discover your smile</h2>
         </header>
+
         <nav id="hamnav">
             <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger" />
             <section id="hamitems">
-                <a href="index.html">Home</a>
-                <a href="bestdestinations.html">Best destionations</a>
-                <a href="tickets.html">Tickets</a>
-                <a href="contact.html">Contact</a>
+                <ul class="menuListItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bestdestinations.html">Best Destinations</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                </ul>
             </section>
         </nav>
 
@@ -41,7 +44,6 @@
             <form action="vote.php" method="post">
 
                 <fieldset>
-
                     <legend>Contact Form</legend>
 
                     <label for="name">First Name*</label>
@@ -98,6 +100,7 @@
         <footer class="footer">
             &copy; 2021 Luc Moetwil
         </footer>
+
         <section id="cookieStatement-contact">
             Cookie statement
         </section>
