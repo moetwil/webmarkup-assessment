@@ -14,8 +14,17 @@
     background: #0066cc;
 }
 
+.menuListItems {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
 #hamitems {
     display: flex;
+    height: 50px;
 }
 
 #hamitems a {
@@ -53,6 +62,16 @@
         border-top: 1px solid #333;
     }
 
+    .menuListItems {
+        list-style: none;
+        display: block;
+
+    }
+
+    .menuListItems li {
+        font-size: 11px;
+    }
+
     #hamnav label {
         display: inline-block;
         color: white;
@@ -64,6 +83,7 @@
 
     #hamitems {
         display: none;
+        height: auto;
     }
 
     #hamnav input:checked~#hamitems {
