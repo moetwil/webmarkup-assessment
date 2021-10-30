@@ -14,9 +14,19 @@
     background: #0066cc;
 }
 
-#hamitems {
-    display: flex;
+#hamnav-section {
+    height: 50px;
+
 }
+
+#hamitems {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none
+}
+
+
 
 #hamitems a {
     flex-grow: 1;
