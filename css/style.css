@@ -193,7 +193,7 @@ nav {
     background-color: #ffff66;
 }
 
-footer {
+.footer {
     background-color: #6699ff;
 
     grid-area: footerTag;
@@ -295,7 +295,13 @@ article {
 }
 
 
+.articleHeader {
+    background-color: transparent;
+}
 
+.articleFooter {
+    position: relative;
+}
 
 
 
@@ -464,7 +470,8 @@ article {
 
 
     #index-footer {
-        flex-basis: 60.2%;
+        /* flex-basis: 60.2%; */
+        flex-basis: 65.2%;
         order: 9;
     }
 
