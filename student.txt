@@ -1,4 +1,4 @@
 Luc Moetwil
 686569
 HaToi INF1C
-https://github.com/moetwil
+https://github.com/moetwil/webmarkup-assessment
