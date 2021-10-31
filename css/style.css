@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap'); */
 
 * {
     padding: 0;
@@ -839,7 +839,7 @@ footer+p {
         order: 3;
         background-color: #ffff66;
         padding: 50px;
-        flex-basis: fill;
+        flex-basis: auto;
         flex-grow: 0;
 
 
@@ -1054,9 +1054,7 @@ footer+p {
 
     }
 
-    th:first-child {
-        color: #FF0;
-    }
+
 
     /*--------------------CONTACT--------------------*/
     #grid-container-contact {
@@ -1278,7 +1276,7 @@ footer+p {
         order: 3;
         background-color: #ffff66;
         padding: 50px;
-        flex-basis: fill;
+        flex-basis: auto;
         flex-grow: 0;
 
 
@@ -1495,7 +1493,7 @@ footer+p {
     }
 
     td:first-child {
-        color: #FF0;
+        color: red;
     }
 
     /*--------------------CONTACT--------------------*/
