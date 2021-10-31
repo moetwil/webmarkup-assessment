@@ -171,6 +171,11 @@ body {
 }
 
 
+td:first-child {
+    background-color: #FF0;
+}
+
+
 /*--------------------INDEX.HTML--------------------*/
 
 /*Colors and grid tag's*/
@@ -289,6 +294,12 @@ article {
 
 #copyright {
     grid-area: copyrightTag;
+}
+
+
+
+
+#ticketTable+p {
     background-color: red;
 }
 
@@ -317,7 +328,9 @@ article {
     position: relative;
 }
 
-
+footer+p {
+    background-color: red;
+}
 
 
 
@@ -506,7 +519,12 @@ article {
         word-spacing: .2rem;
     }
 
-    #index-aside {
+    .articleParagraph::first-letter {
+        font-size: 200%;
+        color: #8A2BE2;
+    }
+
+    .articleParagraph #index-aside {
         background-color: #ffff66;
         width: 25em;
         padding: 50px;
@@ -626,7 +644,12 @@ article {
     }
 
     tr:nth-child(even) {
-        background-color: #dddddd;
+        background-color: #CFF;
+
+    }
+
+    tr:nth-child(odd) {
+        background-color: #FFF;
 
     }
 
@@ -1471,7 +1494,7 @@ article {
 
     }
 
-    th:first-child {
+    td:first-child {
         color: #FF0;
     }
 
